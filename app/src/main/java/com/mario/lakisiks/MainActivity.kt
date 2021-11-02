@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 max = 150
                 setText(binding.tvSortirano, "")
                 lista.clear()
-                delay(3000L)
+                delay(2000L)
                 for (i in 1..35) {
                     var rnds = (1..48).random()
                     while (lista.contains(rnds)) {
@@ -61,11 +61,11 @@ class MainActivity : AppCompatActivity() {
                         setText(binding.tvDrugih15, zaPrikaz30)
                     }
                     setText(binding.tvGlavniBroj, rnds.toString())
-                    delay(4000L)
+                    delay(2500L)
                 }
                 lista.sort();
                 setText(binding.tvSortirano, lista.toString())
-                for (i in 60 downTo 1) {
+                for (i in 45 downTo 1) {
                     setText(binding.tvGlavniBroj, i.toString())
                     delay(1000L)
                 }
